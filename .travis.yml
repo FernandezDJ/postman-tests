@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+-"18.16.1"
+
+install:
+- npm install newman
+
+script:
+- node_modules/.bin/newman run Trello_Collection/Trello.postman_collection.json -e Trello_Collection/Dev.postman_environment.json -r cli,html

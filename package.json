@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "newman": "^5.3.2",
+    "newman-reporter-html": "^1.0.5"
+  },
+  "scripts": {
+    "trello": "newman run Trello_Collection/Trello.postman_collection.json -e Trello_Collection/Dev.postman_environment.json",
+    "report": "newman run Trello_Collection/Trello.postman_collection.json -e Trello_Collection/Dev.postman_environment.json -r cli,html"
+  }
+}
